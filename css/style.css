@@ -1,0 +1,112 @@
+@charset 'utf-8';
+body {
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    background-image: url(../img/background_clock);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+input:focus {
+    outline: none;
+}
+.container {
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #c2faff;
+}
+.container h1 {
+    display: block;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+.input_area {
+    position: relative;
+    width: 300px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.input_area .task_input {
+    display: block;
+    width: 300px;
+    margin: auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.input_area .add_button {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 30px;
+    border: 2px solid #111;
+    background-color: lightpink;
+}
+.task_area {
+    border: 1px solid #111;
+}
+.task_tabs {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #111;
+}
+.task_tabs div {
+    padding: 1em;
+}
+.task_tabs > div {
+    cursor: pointer;
+}
+#under_line {
+    position: absolute;
+    width: 71px;
+    height: 4px;
+    top: 75px;
+    left: 0;
+    padding: 0;
+    background-color: lightpink;
+}
+.task {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #111;
+}
+
+.task-done {
+    text-decoration: line-through;
+    background-color: lightskyblue;
+    transition: 1s;
+}
+.button-box {
+    display: flex;
+}
+.button-box button {
+    width: 4em;
+    height: 100%;
+    border: none;
+    margin: 0;
+    background-color: lightblue;
+    transition: 1s;
+    font-size: 30px;
+}
+.button-box button:first-child:hover {
+    background-color: greenyellow;
+}
+.button-box button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0, 0.3);
+}
+.fa-check {
+    color: limegreen;
+}
+.fa-rotate-left {
+    color: lightslategray;
+}
+.fa-trash-can {
+    color: red;
+}
+.task span {
+    padding: 1em;
+}
